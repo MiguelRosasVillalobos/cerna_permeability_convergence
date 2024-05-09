@@ -136,6 +136,7 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
 		mv "0/" ".."
 		mv "system/" ".."
 		mv "VTK/" ".."
+		mv "mesh.geo" ".."
 
 		cd ..
 
@@ -148,6 +149,7 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
 		mv "0/" "Case_${i}_${valores_lc[$j]}/"
 		mv "system/" "Case_${i}_${valores_lc[$j]}/"
 		mv "VTK/" "Case_${i}_${valores_lc[$j]}/"
+		mv "mesh.geo" "Case_${i}_${valores_lc[$j]}/"
 
 		# Se copia script de extraccion
 		cp "Case_0/deltap_extract.py" "Case_${i}_${valores_lc[$j]}/"
