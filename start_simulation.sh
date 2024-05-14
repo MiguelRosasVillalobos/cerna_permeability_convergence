@@ -86,7 +86,7 @@ for ((i = 1; i <= $cantidad_simulaciones; i++)); do
 	mv deltap_extract.py Case_0/
 
 	# Se inicia el cilclo para variar el valor de Reynolds
-	for j in {0..14}; do
+	for j in {0..4}; do
 		#se genera contador k
 		k=$((j + 1))
 
